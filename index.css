@@ -23,7 +23,7 @@ body {
     animation: rotate 0.56s infinite linear;
     width:50px;
     height:50px;
-    border:12px solid rgb(255, 44, 90);
+    border:12px solid rgba(166, 3, 101, 0.886);
     border-bottom:12px solid #fff;
     border-radius:50%;
     margin:0;
@@ -46,7 +46,7 @@ header table {
     width:100%;
 }
 #logo {
-    width:20%;
+    width:30%;
 }
 #navigation {
     width:80%;
@@ -70,7 +70,7 @@ header table {
     transition:0.4s ease-in-out;
 }
 #magnify h1:hover{
-    color:rgb(255, 44, 90);
+    color:rgb(166, 3, 101, 0.886);
     cursor:pointer;
 }
 #img_here {
@@ -82,18 +82,21 @@ header table {
 }
 #logo {
     font-size:24px;
-    color:rgb(255, 44, 90);
+    color:rgb(166, 3, 101, 0.886);
 }
 #navigation {
-    text-align:right;
+    text-align: right;
+    white-space: nowrap; /* Prevents text wrapping */
 }
+
 #navigation a {
-    color:inherit;
-    text-decoration:none;
-    padding:5px 10px;
-    border-bottom:2px solid transparent;
-    margin-left:4vw;
-    transition:0.4s ease-in-out;
+    color: inherit;
+    text-decoration: none;
+    padding: 5px 10px; /* Adjust padding if necessary */
+    border-bottom: 2px solid transparent;
+    margin-left: 2vw; /* Adjust margin if necessary */
+    transition: 0.4s ease-in-out;
+    display: inline-block; /* Ensure each link stays on one line */
 }
 #navigation a:hover{
     border-bottom:2px solid #fff;
@@ -112,176 +115,205 @@ header table {
     flex-direction:column;
     justify-content:center;
     text-align:left;
-    padding:0px 8%;
+    padding:0px 10%;
 }
 #about h1 {
     font-size:45px;
-    word-wrap:break-word;
+    word-wrap:normal;
 }
 #about table {
     width:70%;
     margin-top:4vh;
 }
 #about table tr td {
-    width:20% !important;
+    width:30% !important;
     text-align:left;
 }
-.social {
-    color:rgb(255, 44, 90);
-    font-size:23px;
-    padding:12px 17px;
-    border-radius:50%;
-    background:transparent;
-    transition:0.4s ease-in-out;
-    font-weight:bold;
-    margin:0px 8px;
+
+.social-icons td {
+    margin-right: 10px; /* Adjusted margin to change the spacing between social icons */
 }
+
+.social {
+    color: rgb(166, 3, 101, 0.886);
+    font-size: 30px;
+    padding: 12px 18px;
+    border-radius: 50%;
+    background: transparent;
+    transition: 0.4s ease-in-out;
+    font-weight: bold;
+}
+
 .social:hover { 
     cursor: pointer;
     color:#fff;
-    background:rgb(255, 44, 90);
-    box-shadow:0px 10px 30px rgba(255, 66, 107,0.8);
+    background:rgba(166, 3, 101, 1);
+    box-shadow:0px 10px 30px rgba(166, 3, 101, 1);
 }
 .btn_one {
     font-size:18px;
     font-family: 'Poppins', sans-serif;
-    color:rgb(255, 44, 90);
+    color:rgb(166, 3, 101, 0.886);
     background:#fff;
-    border:3px solid rgb(255, 44, 90);
+    border:3px solid rgb(166, 3, 101, 0.886);
     padding:8px 40px;
-    width:35%;
+    width:45%;
     border-radius:80px;
     font-weight:bold;
     margin:2vh 0px;
     transition:0.4s ease-in-out;
 }
 .btn_one:hover {
-    box-shadow:0px 10px 30px rgba(255, 44, 90, 0.8);
+    box-shadow:0px 10px 30px rgba(166, 3, 101, 1);
     cursor:pointer;
     color:#fff;
-    background:rgb(255, 44, 90);
+    background:rgba(166, 3, 101, 1);
 }
 #rightImage {
-    width:100%;
-    height:95vh;
-    background:linear-gradient(0deg,rgba(255, 44, 90, 0.8),rgba(255, 44, 90, 0.8)),url("https://images.unsplash.com/photo-1506057527569-6a0285b2fcc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=60") center center;
-    background-size:cover;
-    background-repeat:no-repeat;
+    width: 100%;
+    height: 95vh;
+    background: linear-gradient(0deg, rgba(181, 177, 177, 0.1), rgba(181, 177, 177, 0.1)),
+                url("images/my-image.jpg") center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 #work {
-    width:92vw;
-    padding:6vh 4vw;
-    font-weight:bold;
+    width: 92vw;
+    padding: 4vh 4vw;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text wrapping */
 }
+
 #work h1 {
-    padding:5px 0px;
-    border-bottom:4px solid rgb(255, 44, 90);
-    width:6%;
+    padding: 0;
+    margin-bottom: 2vh;
+    border-bottom: 4px solid rgb(166, 3, 101, 0.886);
+    width: 11%;
 }
+
 #photos {
-    width:100%;
-    columns:3;
-    column-gap:4%;
-    z-index:1;
-    transition:0.4s ease-in-out;
+    width: 100%;
+    columns: 3;
+    column-gap: 4%;
+    z-index: 1;
+    transition: 0.4s ease-in-out;
 }
+
 #photos img {
-    width:100%;
-    height:auto;
-    margin:4.5% 0px;
-    transition:0.4s ease-in-out;
+    width: 100%;
+    height: auto;
+    margin: 4.5% 0;
+    transition: 0.4s ease-in-out;
 }
+
 #photos img:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
+
 #bio {
-    width:92vw;
-    padding:6vh 4vw;
-    font-weight:bold;
+    width: 92vw;
+    padding: 4vh 4vw;
+    margin: 2vh 0;
+    font-weight: bold;
 }
+
 #bio h1 {
-    padding:5px 0px;
-    border-bottom:4px solid rgb(255, 44, 90);
-    width:8%;
+    padding: 0;
+    margin-bottom: 2vh;
+    border-bottom: 4px solid rgb(166, 3, 101, 0.886);
+    width: 12%;
 }
+
 #contact {
-    width:92vw;
-    padding:6vh 4vw;
+    margin-top: 2vh;
+    width: 92vw;
+    padding: 4vh 4vw;
 }
+
 #contact h1 {
-    padding:5px 0px;
-    border-bottom:4px solid rgb(255, 44, 90);
-    width:10%;
+    padding: 5px 0;
+    border-bottom: 4px solid rgb(166, 3, 101, 0.886);
+    width: 8.6%;
 }
+
 #contact table {
-    width:100%;
+    width: 100%;
 }
+
 #contact table tr td {
-    width:50%;
+    width: 50%;
 }
-#inner_div table{
-    width:100%;
+
+#inner_div table {
+    width: 100%;
 }
-#inner_div table tr td{
-    font-weight:bold;
+
+#inner_div table tr td {
+    font-weight: bold;
 }
-#inner_table tr td{
-    padding:10px 20px !important;
+
+#inner_table tr td {
+    padding: 10px 20px !important;
 }
+
 #contact form {
-    width:100%;
+    width: 100%;
 }
+
 #contact form input {
-    width:96%;
-    margin:20px 1%;
-    background:transparent;
-    border:0px;
-    border-bottom:3px solid rgba(255, 44, 90,0.5);
-    padding:8px 10px;
+    width: 96%;
+    margin: 20px 1%;
+    background: transparent;
+    border: 0;
+    border-bottom: 3px solid rgba(166, 3, 101, 0.886);
+    padding: 8px 10px;
     font-family: 'Poppins', sans-serif;
-    font-size:18px;
-    transition:0.4s ease-in-out;
-    color:#000;
-    font-weight:bold;
+    font-size: 18px;
+    transition: 0.4s ease-in-out;
+    color: #000;
+    font-weight: bold;
 }
+
 #contact form textarea {
-    width:96%;
-    margin:20px 1%;
-    padding:8px 10px;
-    border:0px;
-    border-bottom:3px solid rgba(255, 44, 90,0.5);
-    padding:8px 10px;
+    width: 96%;
+    margin: 20px 1%;
+    padding: 8px 10px;
+    border: 0;
+    border-bottom: 3px solid rgba(166, 3, 101, 0.886);
     font-family: 'Poppins', sans-serif;
-    font-size:18px;
-    background:transparent;
-    resize:none;
-    transition:0.4s ease-in-out;
-    color:#000;
-    font-weight:bold;
+    font-size: 18px;
+    background: transparent;
+    resize: none;
+    transition: 0.4s ease-in-out;
+    color: #000;
+    font-weight: bold;
 }
-#contact form input:focus {
-    outline:none;
-    border-bottom:3px solid rgba(255, 44, 90,1);
-}
+
+#contact form input:focus,
 #contact form textarea:focus {
-    outline:none;
-    border-bottom:3px solid rgba(255, 44, 90,1);
+    outline: none;
+    border-bottom: 3px solid rgba(166, 3, 101, 0.886);
 }
+
 #address {
-    position:relative;
-    top:-25px;
-    left:30px;
+    position: relative;
+    top: -25px;
+    left: 30px;
 }
+
 #footer {
-    width:100%;
-    padding:10vh 0px;
-    text-align:center;
-    font-weight:bold;
+    width: 100%;
+    padding: 10vh 0;
+    text-align: center;
+    font-weight: bold;
 }
+
 #footer a {
-    color:rgb(255, 44, 90);
-    text-decoration:none;
+    color: rgb(166, 3, 101, 0.886);
+    text-decoration: none
+
 }
 ::placeholder {
     color:#000;
@@ -343,12 +375,12 @@ button:focus {
     padding:6px 30px;
     width:60%;
     margin:4vh auto;
-    box-shadow:0px 10px 20px rgba(255, 44, 90, 0.8);
-    background:rgb(255, 44, 90);
+    box-shadow:0px 10px 20px rgba(166, 3, 101, 0.886);
+    background:rgb(166, 3, 101, 1);
     color:#fff;
     }
     .btn_one:hover {
-        box-shadow:0px 10px 40px rgba(255, 44, 90, 0.8);
+        box-shadow:0px 10px 40px rgba(166, 3, 101, 1);
         cursor:pointer;
     }
     #contact table tr td {
